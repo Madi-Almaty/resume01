@@ -3,85 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, css, coursr, tags" >
+    <meta name="description" content="Это базовый курс по HTML">
+    <title>HTML Course</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="imgs/img01.jpg" width="200" alt="Аватарка"
 
-    <br>
+    <div class="container">
+
+    <div class="info">
+    <img src="avatarka.jpg" alt="Аватарка" class="avatar">
     
+    <div class="info-text"> 
+
     <h1>Мади</h1>
-    <p> Учусь программировать по программе онлайн школы программирование <strong> Result School.</strong> <em>Люблю заниматься спортом, читать и слушать аудиокниги.</em> </p>
-    <h2> Список социальных сетей</h2>
     
-        |<a href="https://vk.com/id173354933" target="_blank"> VK </a>
-       |<a href="https://vk.com/id173354933" target="_blank"> VK </a>
+    <p>Меня зовут <strong>Мади</strong>, изучаю языки разметок по курсу <em>"Базовый курс HTML & CSS"</em> онлайн школы программирования <strong> Result school.</strong>  </p>
 
-    <h1>Мои хобби</h1>
-    <ol>
-        <li>Аудиокниги</li>
-        <li>Бокс</li>
-        <li>Чтение</li>
-        <li>Пешие прогулки</li>
-    </ol>
+    <p>Люблю <strong>заниматься спортом, слушать музыку и изучать все новое.</strong> </p>
 
-    <h1> Опыт работы </h1>
- <table>
+       <h2>Список социальных сетей:</h2>
+       <br>
+       
+       <a href="#"  target="_blank">Instagram </a>
+       <a href="https://vk.com/id173354933"  target="_blank">  | VK </a>
+       <a href="https://my.mail.ru/mail/madi89.89/" target="_blank">  | Mail.ru</a>
+    </div>
+    </div>
+<div class="card bg-yellow">
+       <h2>Мои хобби</h2>
+<ol class="list">
+    <li>Бокс</li>
+    <li>Чтение</li>
+    <li>Музыка</li>
+</div>
+
+<div class="card bg-red">
+<h2>Опыт работы</h2>
+</ol>
+ <table class="table">
 <thead>
-<tr>    
-<th>Название</th>
+    <tr>
+<th> Название</th>
 <th>Должность</th>
-<th>Год</th>
+<th>Год</th>  
 </tr>
 </thead>
 <tbody>
-<tr>  
-    <td> ТОО "ЮК Сириус"  </td> 
-    <td> Помощник юриста </td>  
-    <td> 2007 </td>  
+<tr>
+    <td>ТОО "Сириус"</td>
+    <td> Менеджер</td>
+    <td>2010-2014</td>
 </tr>
-<tr>  
-    <td> ПСК Абылайхан </td> 
-    <td>  Администратор </td>  
-    <td> 2009  </td>  
-</tr>
-<tr>  
-    <td> АО "Хоум Кредит Банк"  </td> 
-    <td> Кредитный консультант  </td>  
-    <td> 2010-2012  </td>  
+<tr>
+<td> АО "Forte bank" </td>
+<td>  Менеджер</td>
+<td>2014-2018</td>
 </tr>
 
-
+<tr>
+    <td>ТОО "Start</td>
+    <td>Руководитель отдела продаж</td>
+    <td>2018-сейчас</td>
+</tr>
 </tbody>
+ </table>
+</div>
+
+<div class="card bg-green" >
+ 
+ <form class="form"> 
+    <h2> Связаться со мной</h2>
+<div class="form-row">
+
+<div class="form-group"> 
+    <label for="name"> Ваше имя:</label>
+    <input type="name" id="name" value="Введите имя"> 
+</div>
+
+<div class="form-group"> 
+    <label for="email"> Ваш email:</label>
+    <input type="email" id="email" value="Введите email"> 
+    </div>
+</div>
+
+<div class="form-group">
+<label for="massage"> Ваше сообщение:</label>
+<textarea id="massage" cols="15" rows="5"> Введите сообщение... </textarea>
+
+</div>
+
+<button type="submit" class="btn"> Отправить форму</button>
 
 
- </table>   
 
- <h1> Связваться со мной</h1>
-    <form>  
-        <div>
-            <label for="name"> Ваше имя: </label>
-            <input type="name" id="name" value="Введите имя"> 
-                </div>
+ </form>
+</div>
 
-                <div>
-            <label for="email"> Ваше email: </label>
-            <input type="email" id="email" value="Введите email"> 
-                </div>
-
-                <div>
-            <label for="massage"> Ваше сообщение: </label>
-            <br>
-            <textarea id="massage"> Введите сообщение...</textarea>
-                </div>
-
-           <!--      <button type="submit"> Отправить!</button> -->
-                <input type="submit" value="Отправить!">
-
-
-
-    </form>
+</div>
 
 </body>
 </html>
